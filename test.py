@@ -6,6 +6,7 @@ from grabscreen import grab_screen
 from getkeys import key_check
 import pyautogui
 
+
 #loading the model
 model = load_model('dino.h5')
     
