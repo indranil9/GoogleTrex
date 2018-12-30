@@ -5,7 +5,6 @@ import os
 import time
 
 
-
 with open('actions.csv', 'w') as csv:
 
         x = 0
