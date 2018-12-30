@@ -37,7 +37,7 @@ with open('actions.csv', 'w') as csv:
                     x += 1
                     c += 1
             elif 'down' in keys:
-                if d < 25:#25 denotes the no of images for down action
+                if d < 50:#50 denotes the no of images for down action
                     cv2.imwrite('./images/frame_{0}.jpg'.format(x), screen)
                     csv.write('2\n')
                     print('duck')
@@ -52,7 +52,7 @@ with open('actions.csv', 'w') as csv:
                     t += 1
 
 
-            if c == 500 and t == 500 and d==25:
+            if c == 1000 and t == 1000 and d==50:
                 csv.close()
                 cv2.destroyAllWindows()
                 break                
