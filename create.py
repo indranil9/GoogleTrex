@@ -30,7 +30,7 @@ with open('actions.csv', 'w') as csv:
             # resize to something a bit more acceptable for a CNN
             keys = key_check()
             if 'up' in keys:
-                if c < 500:#500 denotes the no of images for jump action
+                if c < 1000:#1000 denotes the no of images for jump action
                     cv2.imwrite('./images/frame_{0}.jpg'.format(x), screen)
                     csv.write('1\n')
                     print('jump dino')
@@ -44,7 +44,7 @@ with open('actions.csv', 'w') as csv:
                     x += 1
                     d += 1
             else:
-                if t < 500:#500 denotes the no of images for run action
+                if t < 1000:#1000 denotes the no of images for run action
                     cv2.imwrite('./images/frame_{0}.jpg'.format(x), screen)
                     csv.write('0\n')
                     print('run')

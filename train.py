@@ -19,8 +19,7 @@ with open ('actions.csv', 'r') as f:
 all_images = []
 img_num = 0
 while img_num < 2050: #2050 denotes the total no of images
-        img = cv2.imread(r'../images/frame_{0}.jpg'.format(img_num), cv2.IMREAD_GRAYSCALE)
-        #img = cv2.resize(img, (0,0), fx=0.5, fy=0.5)
+        img = cv2.imread('images/frame_{0}.jpg'.format(img_num), cv2.IMREAD_GRAYSCALE)
         img = img[:, :, np.newaxis]
         all_images.append(img)
         img_num += 1

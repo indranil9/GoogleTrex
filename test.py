@@ -15,10 +15,8 @@ def main():
         print(i+1)
         time.sleep(1)
 
-    paused = False
     while(True):
         
-        if not paused:
             # 640x480 windowed mode
             screen = grab_screen(region=(0,0,640,480))
             screen = cv2.cvtColor(screen, cv2.COLOR_BGR2GRAY)
@@ -35,7 +33,6 @@ def main():
             # jump
                 pyautogui.press('up')
                 print('JUMP')
-                #time.sleep(.07)
             elif prediction == 0:
                  print('CHILL')
                  # do nothing
