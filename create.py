@@ -36,7 +36,7 @@ with open('actions.csv', 'w') as csv:
                     x += 1
                     c += 1
             elif 'down' in keys:
-                if d < 25:#25 denotes the no of images for down action
+                if d < 25:#25 denotes the no of images for duck action
                     cv2.imwrite('./images/frame_{0}.jpg'.format(x), screen)
                     csv.write('2\n')
                     print('duck')
