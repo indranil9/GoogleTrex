@@ -1,3 +1,5 @@
+# creating the data set
+
 import cv2
 from grabscreen import grab_screen
 from getkeys import key_check
